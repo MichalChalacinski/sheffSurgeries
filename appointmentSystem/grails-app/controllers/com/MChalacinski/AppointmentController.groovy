@@ -2,5 +2,5 @@ package com.MChalacinski
 
 class AppointmentController {
 
-    def index() { }
+    def scaffold= Appointment
 }

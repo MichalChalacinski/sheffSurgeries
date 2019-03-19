@@ -2,5 +2,5 @@ package com.MChalacinski
 
 class ReceptionistController {
 
-    def index() { }
+    def scaffold= Receptionist
 }

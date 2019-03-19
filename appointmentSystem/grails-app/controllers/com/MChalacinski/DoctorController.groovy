@@ -2,5 +2,5 @@ package com.MChalacinski
 
 class DoctorController {
 
-    def index() { }
+    def scaffold= Doctor
 }
