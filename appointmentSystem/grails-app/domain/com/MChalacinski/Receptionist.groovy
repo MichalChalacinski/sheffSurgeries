@@ -7,7 +7,6 @@ String recepUsername
 String recepPassword
 int recepPhone
 
-}
 
     static constraints = {
 recepName nullable: false, blank: false

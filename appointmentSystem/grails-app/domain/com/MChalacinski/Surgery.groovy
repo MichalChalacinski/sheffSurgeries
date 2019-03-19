@@ -15,7 +15,6 @@ address nullable: false, blank:false
 postcode nullable: false, blank:false
 telephone nullable: false, blank:false
 numberOfPatients nullable: false, blank:false
-startDate nullable: false, blank:false
 description nullable: false, blank:false, maxSize: 5000, widget: 'textarea'
 openingTime nullable: false, blank:false
     }

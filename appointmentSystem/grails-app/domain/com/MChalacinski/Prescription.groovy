@@ -8,7 +8,6 @@ float totalCost
 Date dateIssued
 String patientPaying
 
-}
 
     static constraints = {
 pharmacyName nullable: false, blank: false

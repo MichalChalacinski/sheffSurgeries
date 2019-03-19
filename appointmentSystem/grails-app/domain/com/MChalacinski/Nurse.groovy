@@ -7,7 +7,6 @@ String nurseEmail
 String nurseOffice
 int nursePhone
 
-}
 
     static constraints = {
 nurseName nullable: false, blank: false
