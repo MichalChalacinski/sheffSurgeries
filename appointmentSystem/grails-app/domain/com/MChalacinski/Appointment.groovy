@@ -3,11 +3,13 @@ package com.MChalacinski
 class Appointment {
 Date appDate
 String appTime
-int appDuration
+String appDuration
 String roomNumber
-Patient patient
 
-static hasOne=[patient:Patient]
+String toString(){
+return appDate
+}
+
 
     static constraints = {
 appDate nullable: false, blank: false

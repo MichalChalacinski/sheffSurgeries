@@ -4,10 +4,13 @@ class Prescription {
 String pharmacyName
 int prescripNumber
 String medicine
-float totalCost
+String totalCost
 Date dateIssued
 String patientPaying
-Patient patient
+
+String toString(){
+return prescripNumber
+}
 
     static constraints = {
 pharmacyName nullable: false, blank: false

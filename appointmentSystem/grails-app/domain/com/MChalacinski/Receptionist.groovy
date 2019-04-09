@@ -5,10 +5,14 @@ String recepName
 String recepEmail
 String recepUsername
 String recepPassword
-int recepPhone
+String recepPhone
 
+String toString(){
+return recepName
+}
+
+static hasMany=[surgerys:Surgery]
 static belongsTo=[Surgery]
-
     static constraints = {
 recepName nullable: false, blank: false
 recepEmail nullable: false, blank: false, email:true

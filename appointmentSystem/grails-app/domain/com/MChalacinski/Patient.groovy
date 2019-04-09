@@ -2,19 +2,24 @@ package com.MChalacinski
 
 class Patient {
 String patientName
-String patientAdress
+String patientAddress
 String patientResidence
 Date patientDob
 String patientId
 Date dateRegistered
-int patientPhone
+String patientPhone
 
-static hasMany=[prescriptions:Prescription, surgeries:Surgery, doctors:Doctor]
-static hasOne=[appointment:Appointment]
+String toString(){
+return patientName
+}
+
+
+static hasMany=[prescriptions:Prescription, surgerys:Surgery, doctors:Doctor, appointments:Appointment]
+static belongsTo=[Doctor, Surgery]
 
     static constraints = {
 patientName nullable: false, blank: false
-patientAdress nullable: false, blank: false
+patientAddress nullable: false, blank: false
 patientResidence nullable: false, blank: false
 patientDob nullable: false, blank: false
 patientId nullable: false, blank: false, unique:true

@@ -7,10 +7,14 @@ String position
 String doctorEmail
 String password
 String doctorOffice
-int doctorPhone
+String doctorPhone
 String bio
 
-static hasMany=[nurses:Nurse, appointments:Appointment, prescriptions:Prescription, patients:Patient]
+String toString(){
+return fullName
+}
+
+static hasMany=[nurses:Nurse, appointments:Appointment, prescriptions:Prescription, patients:Patient, surgerys:Surgery]
 static belongsTo=[Surgery]
 
     static constraints = {
